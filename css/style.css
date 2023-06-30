@@ -9,6 +9,10 @@ body {
 h1.title, .container {
     text-align: center;
 }
+h1.title {
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
 .container {
     width: 250px;
     margin: auto;
@@ -22,7 +26,25 @@ h1.title, .container {
     border: 1px solid black;
     border-radius: 3px;
 }
+#sconto {
+    margin-bottom: 15px;
+}
 #prezzo {
-    margin-top: 15px;
     display: block;
+    color: red;
+    font-weight: 600;
+}
+.caption {
+    margin: 0;
+    padding-bottom: 1px;
+    text-transform: uppercase;
+    text-align: left;
+}
+.success {
+    color: green;
+    font-weight: 600;
+}
+.failed {
+    font-weight: 600;
+    color: gray;
 }

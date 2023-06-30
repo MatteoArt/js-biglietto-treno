@@ -12,16 +12,16 @@ let coupon;
 
 if (age < 18) {
     sconto = 20;
-    document.getElementById("sconto").innerHTML = `Hai diritto ad uno sconto del ${sconto}%`;
+    document.getElementById("sconto").innerHTML = `<span class='success'>Hai diritto ad uno sconto del ${sconto}%</span>`;
     coupon = (prezzo * sconto) / 100; //quantità da sottrarre
     prezzoFinale = prezzo - coupon;
 } else if (age > 65) {
     sconto = 40;
-    document.getElementById("sconto").innerHTML = `Hai diritto ad uno sconto del ${sconto}%`;
+    document.getElementById("sconto").innerHTML = `<span class='success'>Hai diritto ad uno sconto del ${sconto}%</span>`;
     coupon = (prezzo * sconto) / 100;
     prezzoFinale = prezzo - coupon;
 } else {
-    document.getElementById("sconto").innerHTML = "Spiacenti, non hai diritto a nessuno sconto";
+    document.getElementById("sconto").innerHTML = "<span class='failed'>Spiacenti, non hai diritto a nessuno sconto</span>";
     prezzoFinale = prezzo;
 }
  
